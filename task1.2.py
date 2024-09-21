@@ -1,7 +1,7 @@
 import math
 
-a = 4
-b = 6
+a = 4.5
+b = 5
 h = 0.2
 def get_x_plus_ln_x(x):
     ln_x = math.sqrt(x**7)
@@ -20,4 +20,4 @@ def run_task_12(a, b, h):
 
 
 if __name__ == '__main__':
-    run_task_12(4, 6, 0.2)
+    run_task_12(4.5, 5, 0.2)

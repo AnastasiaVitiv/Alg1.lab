@@ -1,8 +1,9 @@
 import math
 
 a = 4
-b = 6
+b = 4.4
 h = 0.2
+
 
 def get_cosec_sqr_x(x):
     sqr_x = x**2
@@ -21,5 +22,5 @@ def run_task_11(a, b, h):
         x += h
 
 if __name__ == '__main__':
-    run_task_11(4, 6, 0.2)
+    run_task_11(4, 4.4, 0.2)
 
