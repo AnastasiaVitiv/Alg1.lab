@@ -19,5 +19,5 @@ def calculate(x):
     else:
         return "Не входить в область значень"
 
-result = calculate(x)
+result = round(calculate(x), 4)
 print(f"Результат: {result}")
