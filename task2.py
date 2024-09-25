@@ -6,12 +6,21 @@ h = 0.1
 a = 3
 b = 4
 
-print(f"{'k':^10} {'x':^10} {'term':^15}")
+print(f"{'x':^10} {'term':^15}")
 
-k = 1
+
 x = a
-while (term > d or term == 0.00) and x <= b:
-    print(f"{k:^10} {x:^10.1f} {round(term, 5):^15.5f}")
-    term += abs((1 / k) * (math.tan(x / (2 ** k))))
-    k += 1
-    x += h
+while x <= b:
+    mysum = 0
+    k = 1
+    term = (1 / k) * (math.tan(x / (2 ** k)))
+
+    while abs(term) > d:
+        mysum += term
+
+        term = abs((1 / k) * (math.tan(x / (2 ** k))))
+        k += 1
+
+    print(f"{x} {mysum}")
+    x = x + h
+    x = round(x, 4)
